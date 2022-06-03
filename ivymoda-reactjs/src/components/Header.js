@@ -153,7 +153,6 @@ const Header = () => {
                 </ul>
                     </li>
                     <li className='header-item'>TRẺ EM</li>
-                    <li className='header-item'>ƯU ĐÃI THÁNG 5</li>
                     <li className='header-item'>BỘ SƯU TẬP</li>
                     <li className='header-item'>LIFESTYLE</li>
                     <li className='header-item'>VỀ CHÚNG TÔI</li>

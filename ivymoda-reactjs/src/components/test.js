@@ -38,7 +38,7 @@ function dragStart(e) {
   e.preventDefault();
   initialPosition = slides.offsetLeft;
 
-  if (e.type == "touchstart") {
+  if (e.type === "touchstart") {
     posX1 = e.touches[0].clientX;
   } else {
     posX1 = e.clientX;
@@ -49,7 +49,7 @@ function dragStart(e) {
 }
 
 function dragMove(e) {
-  if (e.type == "touchmove") {
+  if (e.type === "touchmove") {
     posX2 = posX1 - e.touches[0].clientX;
     posX1 = e.touches[0].clientX;
   } else {
@@ -87,7 +87,7 @@ function switchSlide(arg, arg2) {
     if (!arg2) {
       initialPosition = slides.offsetLeft;
     }
-    if (arg == "next") {
+    if (arg === "next") {
       slides.style.left = `${initialPosition - slideWidth}px`;
       index++;
     } else {
@@ -102,12 +102,12 @@ function switchSlide(arg, arg2) {
 function checkIndex() {
   slides.classList.remove("transition");
 
-  if (index == -1) {
+  if (index === -1) {
     slides.style.left = `-${slidesLength * slideWidth}px`;
     index = slidesLength - 1;
   }
 
-  if (index == slidesLength) {
+  if (index === slidesLength) {
     slides.style.left = `-${1 * slideWidth}px`;
     index = 0;
   }
