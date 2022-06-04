@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.scss';
 const Header = () => {
     return (
-        <div>
+        <div className='main'>
             <nav className='header'>
                 <ul className='header-container-left'>
                     <li className='header-item nu'>NỮ
